@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAMUELSONFRAMES</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+</head>
+<body class="page-home">
+
+  <!-- ══ NAVIGATION ══ -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand">SAMUELSONFRAMES</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+      <label for="nav-toggle" class="nav-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Portfolio</a></li>
+        <li><a href="about.html" class="nav-link">About & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ══ HERO TEXTE ══ -->
+  <section class="home-hero">
+    <p class="home-hero-sub">Photographe — Lyon</p>
+    <h1 class="home-hero-title">Choisissez<br /><em>un univers</em></h1>
+  </section>
+
+  <!-- ══ GRILLE 6 PHOTOS (2 par ligne, 3 lignes) ══ -->
+  <main class="grid-section">
+    <div class="photo-grid">
+
+      <!-- Thème 1 : Portrait -->
+      <a href="paris.html" class="photo-card">
+        <div class="photo-wrap">
+          <img src="paris/paris1.jpg" alt="PARIS" onerror="this.style.display='none'" />
+          <div class="photo-fallback" style="--n:1"></div>
+          <div class="photo-overlay">
+            <span class="photo-title">Paris</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Thème 2 : Urbain -->
+      <a href="galerie.html?theme=urbain" class="photo-card">
+        <div class="photo-wrap">
+          <img src="images/urbain1.jpg" alt="Urbain" onerror="this.style.display='none'" />
+          <div class="photo-fallback" style="--n:2"></div>
+          <div class="photo-overlay">
+            <span class="photo-title">Urbain</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Thème 3 : Nature -->
+      <a href="galerie.html?theme=nature" class="photo-card">
+        <div class="photo-wrap">
+          <img src="images/nature1.jpg" alt="Nature" onerror="this.style.display='none'" />
+          <div class="photo-fallback" style="--n:3"></div>
+          <div class="photo-overlay">
+            <span class="photo-title">Nature</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Thème 4 : Mode -->
+      <a href="galerie.html?theme=mode" class="photo-card">
+        <div class="photo-wrap">
+          <img src="images/mode1.jpg" alt="Mode" onerror="this.style.display='none'" />
+          <div class="photo-fallback" style="--n:4"></div>
+          <div class="photo-overlay">
+            <span class="photo-title">Mode</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Thème 5 : Architecture -->
+      <a href="galerie.html?theme=architecture" class="photo-card">
+        <div class="photo-wrap">
+          <img src="images/archi1.jpg" alt="Architecture" onerror="this.style.display='none'" />
+          <div class="photo-fallback" style="--n:5"></div>
+          <div class="photo-overlay">
+            <span class="photo-title">Architecture</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Thème 6 : Sport -->
+      <a href="galerie.html?theme=sport" class="photo-card">
+        <div class="photo-wrap">
+          <img src="images/sport1.jpg" alt="Sport" onerror="this.style.display='none'" />
+          <div class="photo-fallback" style="--n:6"></div>
+          <div class="photo-overlay">
+            <span class="photo-title">Sport</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <span>© 2026 SAMUELSONFRAMES</span>
+    <span>Tous droits réservés</span>
+  </footer>
+
+</body>
+</html>

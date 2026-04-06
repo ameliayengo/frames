@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About & Contact — SAMUELSONFRAMES</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+</head>
+<body class="page-about">
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav-brand">SAMUELSONFRAMES</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+      <label for="nav-toggle" class="nav-burger">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Portfolio</a></li>
+        <li><a href="about.html" class="nav-link active">About & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="video-section">
+    <div class="video-wrap">
+      <video src="videos/showreel.mp4" autoplay muted loop playsinline class="bg-video" onerror="this.parentElement.classList.add('no-video')"></video>
+      <div class="video-fallback">
+        <span>SAMUELSONFRAMES</span>
+        <p>Mets ta vidéo dans <code>videos/showreel.mp4</code></p>
+      </div>
+      <div class="video-overlay"></div>
+      <div class="video-content">
+        <p class="video-sub">Photographe — Vidéaste</p>
+        <h1 class="video-title">Je capture<br /><em>l'essentiel</em></h1>
+        <a href="#about-content" class="video-cta">En savoir plus ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about-content">
+    <div class="about-inner">
+      <div class="about-photo-wrap">
+        <img src="images/portrait-samuelson.jpg" alt="Samuelson" onerror="this.style.display='none'" />
+        <div class="about-photo-fallback">S</div>
+      </div>
+      <div class="about-text-wrap">
+        <h2 class="section-label">À propos</h2>
+        <h3 class="about-name">Samuel Sonframes</h3>
+        <p class="about-bio">Photographe indépendant basé à Strasbourg, je me spécialise dans la photographie de portrait, de mode et d'architecture. Mon travail explore la lumière naturelle et les compositions épurées pour révéler l'essence de chaque sujet.</p>
+        <p class="about-bio">Disponible pour des missions en France et à l'international. Chaque projet est une collaboration — parle-moi de ta vision.</p>
+        <div class="about-infos">
+          <div class="about-info-item">
+            <span class="info-label">Email</span>
+            <a href="mailto:samuelsonpindyphoto@gmail.com" class="info-val">samuelsonpindyphoto@gmail.com</a>
+          </div>
+          <div class="about-info-item">
+            <span class="info-label">Localisation</span>
+            <span class="info-val">Strasbourg, France</span>
+          </div>
+          <div class="about-info-item">
+            <span class="info-label">Disponibilité</span>
+            <span class="info-val">Ouvert aux projets 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-sep"><span>Demande de devis</span></div>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="contact-intro">
+        <h2 class="section-label">Contact</h2>
+        <h3 class="contact-title">Un projet<br /><em>en tête ?</em></h3>
+        <p class="contact-desc">Remplis le formulaire ci-dessous. Je te répondrai dans les 48h avec un devis personnalisé.</p>
+        <p class="contact-mymail">Mon adresse : <strong>samuelsonpindyphoto@gmail.com</strong></p>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form
+          class="devis-form"
+          action="https://formspree.io/f/xojpykzq"
+          method="POST"
+        >
+          <!-- Sujet de l'email reçu -->
+          <input type="hidden" name="_subject" value=" Devis — SAMUELSONFRAMES" />
+          <!-- Anti-spam -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <div class="form-row two-col">
+            <div class="form-group">
+              <label for="prenom" class="form-label">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Ton prénom" required />
+            </div>
+            <div class="form-group">
+              <label for="nom" class="form-label">Nom *</label>
+              <input type="text" id="nom" name="nom" class="form-input" placeholder="Ton nom" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Ton adresse email *</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="ton@email.com" required />
+          </div>
+
+
+          <div class="form-group">
+            <label for="type" class="form-label">Type de prestation *</label>
+            <select id="type" name="type" class="form-input form-select" required>
+              <option value="" disabled selected>Choisir une prestation…</option>
+              <option value="Portrait">Portrait</option>
+              <option value="Mariage">Mariage / Événement</option>
+              <option value="Mode">Mode / Lookbook</option>
+              <option value="Architecture">Architecture / Immobilier</option>
+              <option value="Sport">Sport / Action</option>
+              <option value="Urbain">Urbain / Reportage</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-row two-col">
+            <div class="form-group">
+              <label for="date" class="form-label">Date souhaitée</label>
+              <input type="date" id="date" name="date" class="form-input" />
+            </div>
+            <div class="form-group">
+              <label for="budget" class="form-label">Budget estimé</label>
+              <select id="budget" name="budget" class="form-input form-select">
+                <option value="" disabled selected>Fourchette…</option>
+                <option value="Moins de 200€">Moins de 200€</option>
+                <option value="200€ - 500€">200€ – 500€</option>
+                <option value="500€ - 1000€">500€ – 1 000€</option>
+                <option value="1000€ - 2000€">1 000€ – 2 000€</option>
+                <option value="Plus de 2000€">Plus de 2 000€</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Décris ton projet *</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Parle-moi de ton projet : lieu, ambiance, nombre de personnes, livraison souhaitée…" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Envoyer ma demande →</button>
+
+          <p class="form-note">En envoyant ce formulaire, tu acceptes d'être contacté par SAMUELSONFRAMES dans le cadre de ta demande.</p>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 SAMUELSONFRAMES</span>
+    <span>samuelsonpindyphoto@gmail.com</span>
+  </footer>
+
+</body>
+</html>
